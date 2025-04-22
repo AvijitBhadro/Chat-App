@@ -17,77 +17,84 @@ Desktop chat app using Java Swing, Networking
 
 # Project for Topics in Java Application Course
 
-Bài tập ứng dụng chat: 
-- Sinh viên viết một chương trình chat (giao diện đồ họa) có các chức năng sau:
-   - Đăng ký chat user (đăng ký từ ứng dụng client)
-   - Chương trình cho phép một user có thể chat với nhiều user khác (đang online) cùng lúc.
-   - Cho phép gởi file trong khi chat.
+Chat application assignment:
+- Students develop a chat program (with graphical interface) that includes the following features:
+   - Chat user registration (registration from the client application)
+   - The program allows a user to chat with multiple other users (who are online) simultaneously.
+   - Allow file sending during chat.
 
-(các chức năng không bắt buộc: chat group, voice chat, webcam)
+(Optional features: group chat, voice chat, webcam)
 
-Thời hạn nộp bài
- - Ngày 26/07/2020
- - Nội dung nộp: MSSV.zip 
-	+ Hướng dẫn sử dụng
-	+ File jar thực thi
-	+ File ant đóng gói chương trình
+Submission deadline
+ - July 26, 2020
+ - Submission content: StudentID.zip 
+	+ User guide
+	+ Executable JAR files
+	+ Ant build file for packaging
 	+ Source code
   
-  # Đồ án đã sử dụng
+# Technologies Used
   
-  - IDE: Apache Netbeans 12 LTS
-  - Java Development Kits 11 LTS
-  - Giao diện đồ hoạ: Java Swing
-  - Hỗ trợ được: Multithreading, Network (Local network), File transfer
+- IDE: Apache Netbeans 12 LTS
+- Java Development Kits 11 LTS
+- Graphical Interface: Java Swing
+- Supports: Multithreading, Network (Local network), File transfer
  
- Chat-App
+## Project Structure
+ 
+Chat-App
  	|<br>
-	+------> Jar: Chứa File Jar thực thi<br>
+	+------> Jar: Contains executable JAR files<br>
 	|<br>
-	+------> Libs: Chứa các file jar là các thư viện hỗ trợ cho chương trình, import vào hai project server và client<br>
+	+------> Libs: Contains JAR library files that support the program, imported into both server and client projects<br>
 	|<br>
-	+------> Report: 18120061.pdf file báo cáo cũng như giải thích chi tiết hơn những gì video có thể chưa kịp nói.<br>
+	+------> Report: 18120061.pdf report file with detailed explanations beyond what might be covered in the video<br>
 	|<br>
-	+------> ScriptDatabase: Chứa script init database<br>
+	+------> ScriptDatabase: Contains database initialization scripts<br>
 	|<br>
-	+------> SourceCode: Chứa toàn bộ source code của đồ án<br>
+	+------> SourceCode: Contains the complete source code of the project<br>
 	|<br>
-	+------> LTUDJava-CQ2017-2018-NVKhiet-Chat App-Self-Evaluation.xlsx: File excel sinh viên tự đánh giá<br>
+	+------> LTUDJava-CQ2017-2018-NVKhiet-Chat App-Self-Evaluation.xlsx: Excel file for student self-evaluation<br>
 	|<br>
-	+------> File txt Readme: file hướng dẫn sử dụng<br>
+	+------> Readme.txt: Usage instructions<br>
 
-Đồ án có sử dụng Database với hệ quản trị CSDL MySQL
-Tài khoản dùng: root và không có mật khẩu
+## Setup Instructions
 
-- Cài đặt XAMPP và khởi động Apache, MySQL
-- Chạy Script init database
-- Vào thư mục Jar, khởi động file server.jar trong thư mục server rồi sau đó mở client.jar trong thư mục client
-  # Status
-  
-| STT  | Tiêu chí chấm điểm                                   | Thang điểm                   | Điểm  |
-|------|------------------------------------------------------|------------------------------|-------|
-| 1    | Chức năng đăng kí tài khoản                          | 1                            | 1     |
-| 2    | Chức năng đăng nhập với tài khoản đã đăng kí         | 1                            | 1     |
-| 3    | Chat                                                 | 2                            | 2     |
-| 4    | Chat có emoji                                        | 0                            | 0     |
-| 5    | Chat cùng lúc với nhiều người (mở nhiều cửa sổ)      | 2                            | 2     |
-| 6    | Gửi file (bên nhận download và xem được, ko bị lỗi)  | 3                            | 3     |
-| 7    | Chat group                                           | 1                            | 1     |
-| 8    | Voice chat                                           | 0.5                          | 0     |
-| 9    | Webcam                                               | 0.5                          | 0     |
-| 10   | Khác                                                 | Quên mật khẩu, Chat Kaomoji  |       |
-|      | Tổng                                                 | Max: 12                      | 10/12 |
+The project uses a MySQL database
+Account used: root with no password
+
+- Install XAMPP and start Apache and MySQL
+- Run the database initialization script
+- Go to the Jar folder, start the server.jar file in the server directory and then open client.jar in the client directory
+
+For detailed setup instructions, see the SETUP_INSTRUCTIONS.md file.
+
+# Features and Grading
+
+| No. | Evaluation Criteria                                 | Max Points                  | Score |
+|-----|-----------------------------------------------------|----------------------------|-------|
+| 1   | User registration feature                           | 1                          | 1     |
+| 2   | Login feature with registered account               | 1                          | 1     |
+| 3   | Chat                                                | 2                          | 2     |
+| 4   | Chat with emoji                                     | 0                          | 0     |
+| 5   | Simultaneous chat with multiple users (multiple windows) | 2                    | 2     |
+| 6   | File sending (receiver can download and view without errors) | 3                | 3     |
+| 7   | Group chat                                          | 1                          | 1     |
+| 8   | Voice chat                                          | 0.5                        | 0     |
+| 9   | Webcam                                              | 0.5                        | 0     |
+| 10  | Others                                              | Password recovery, Kaomoji chat |   |
+|     | Total                                               | Max: 12                    | 10/12 |
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/nhutnamhcmus/Chat-App?style=flat
-[contributors-url]: https://github.com/nhutnamhcmus/Chat-App/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/AvijitBhadro/Chat-App?style=flat
+[contributors-url]: https://github.com/AvijitBhadro/Chat-App/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/nhutnamhcmus/Chat-App?style=flat
-[forks-url]: https://github.com/nhutnamhcmus/Chat-App/network/members
+[forks-shield]: https://img.shields.io/github/forks/AvijitBhadro/Chat-App?style=flat
+[forks-url]: https://github.com/AvijitBhadro/Chat-App/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/nhutnamhcmus/Chat-App?style=flat
-[stars-url]: https://github.com/nhutnamhcmus/Chat-App/stargazers
+[stars-shield]: https://img.shields.io/github/stars/AvijitBhadro/Chat-App?style=flat
+[stars-url]: https://github.com/AvijitBhadro/Chat-App/stargazers
 
-[license-shield]: https://img.shields.io/github/license/nhutnamhcmus/Chat-App?style=flat
-[license-url]: https://github.com/nhutnamhcmus/Chat-App/blob/master/LICENSE
+[license-shield]: https://img.shields.io/github/license/AvijitBhadro/Chat-App?style=flat
+[license-url]: https://github.com/AvijitBhadro/Chat-App/blob/master/LICENSE
